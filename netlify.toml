@@ -4,3 +4,4 @@
 
 [build.environment]
   NODE_VERSION = "16"  # Optional, specify the Node.js version if needed.
+  CI = "false" 
