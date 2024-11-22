@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import { Box, Typography, useTheme } from "@mui/material";
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
-import { format, startOfWeek, endOfWeek } from "date-fns";
+import { format, startOfWeek } from "date-fns";
 import enUS from "date-fns/locale/en-US";
 
 const CustomCalendar = () => {
   const [selectedDate, setSelectedDate] = useState(null);
-  const theme = useTheme();
+  // const theme = useTheme();
 
   const today = new Date();
   const startOfCurrentWeek = startOfWeek(today, { locale: enUS });
@@ -15,6 +15,7 @@ const CustomCalendar = () => {
 
   const handleDateChange = (newDate) => {
     setSelectedDate(newDate);
+    console.log(selectedDate)
   };
 
   const isToday = (date) => date.toDateString() === today.toDateString();

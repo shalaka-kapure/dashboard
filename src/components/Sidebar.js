@@ -54,7 +54,7 @@ const Sidebar = () => {
       {sidebarData.map((data, index) => (
         <div key={index} className="sidebar-div">
           <div>
-            <img src={data.image} alt="sidebar Image" />
+            <img src={data.image} alt="sidebar Icon" />
           </div>
           <div>{data.text}</div>
         </div>
