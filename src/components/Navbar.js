@@ -154,7 +154,7 @@ export default function Navbar() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar position="static" sx={{ marginBottom:"5px" }}>
         <Toolbar>
           <IconButton
             size="large"
@@ -173,8 +173,8 @@ export default function Navbar() {
           >
             LOGO
           </Typography>
-          <Box sx={{ flexGrow: 1, display:"flex", justifyContent:"center" }}>
-            <Search sx={{width: "40%!important"}}>
+          <Box sx={{ flexGrow: 1, display: "flex", justifyContent: "center" }}>
+            <Search sx={{ width: "80%!important" }}>
               <SearchIconWrapper>
                 <SearchIcon sx={{ color: "#999999" }} />
               </SearchIconWrapper>

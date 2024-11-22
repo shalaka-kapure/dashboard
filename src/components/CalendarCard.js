@@ -25,17 +25,19 @@ const CustomCalendar = () => {
         sx={{
           width: 300,
           textAlign: "center",
-          margin: "20px auto",
+          margin: "0px auto",
           fontFamily: "Arial, sans-serif",
+          fontSize: "15px!important",
+          cursor:"pointer"
         }}
       >
         {/* Month and Year */}
         <Typography
           variant="h6"
           sx={{
-            mb: 2,
             textAlign: "left",
             fontWeight: "bold",
+            fontSize: "15px!important",
           }}
         >
           {format(today, "MMMM yyyy")}
@@ -60,7 +62,7 @@ const CustomCalendar = () => {
                 borderTopLeftRadius: "50%",
                 borderTopRightRadius: "50%",
                 padding: "8px",
-                fontWeight:"bold",
+                fontWeight: "bold",
               }}
             >
               {day}

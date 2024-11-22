@@ -78,6 +78,7 @@ const DashboardCards = () => {
                 textAlign: "center",
                 display: "flex",
                 fontWeight: "600",
+                cursor:"pointer"
               }}
             >
               <div style={{ width: "15%" }}>

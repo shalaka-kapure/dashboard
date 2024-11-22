@@ -93,6 +93,7 @@ const ChartWithLabels = ({ data, options }) => {
         justifyContent: "space-between",
         padding: 2,
         backgroundColor: "white",
+        cursor:"pointer"
       }}
     >
       <Box sx={{ width: "100%", display: "flex" }}>

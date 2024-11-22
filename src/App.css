@@ -1,38 +1,117 @@
+body {
+  font-family: "Roboto", sans-serif !important;
+  overflow-x:hidden;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.MuiPaper-root {
+  background-color: #ffffff !important;
+  color: #141414 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.MuiBadge-badge {
+  top: 7px !important;
+  right: 7px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.MuiBadge-dot {
+  background-color: #ffa741 !important;
+}
+
+.MuiInputBase-root {
+  width: 100% !important;
+}
+
+.main {
+  background-color: #edf0f4;
+  padding: 10px 0px;
+}
+
+.right-div {
+  width: 10%;
+  padding-right: 30px;
+}
+
+.left-div {
+  padding-right: 80px;
+}
+
+.main,
+.summary-div,
+.penalty-div,
+.header-box,
+.outstanding-card,
+.total-div {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.header-box {
+  align-items: flex-start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.summary-div {
+  margin-bottom: 20px;
+}
+
+.date-title {
+  font-size: 14px;
+  color: #7b7c89;
+  font-weight: 400;
+  text-align: start;
+}
+
+.total-div {
+  text-align: start;
+}
+
+.total-div {
+  justify-content: unset;
+}
+
+.selected-div,
+.sidebar-div {
+  height: 70px;
+  width: 80px;
+  padding: 10px 10px 0 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-size: 15px;
+}
+.selected-div {
+  background-color: #13255b;
+}
+
+@media screen and (max-width: 480px) {
+  .summary-div,
+  .penalty-div,
+  .header-box,
+  .outstanding-card {
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .outstanding-box,
+  .outstanding-card {
+    width: 100%;
+  }
+
+  .main {
+    justify-content: unset;
+    align-items: flex-start;
+  }
+
+  .right-div {
+    width: 25%;
+    padding-right: 10px;
+  }
+
+  .left-div {
+    padding-right: 0px;
+    width: 55%;
   }
 }
