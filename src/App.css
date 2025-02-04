@@ -1,6 +1,6 @@
 body {
   font-family: "Roboto", sans-serif !important;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 .App {
@@ -67,10 +67,8 @@ body {
 
 .total-div {
   text-align: start;
-}
-
-.total-div {
-  justify-content: unset;
+  width:80%;
+  justify-content: space-evenly;
 }
 
 .selected-div,
@@ -84,6 +82,17 @@ body {
 }
 .selected-div {
   background-color: #13255b;
+}
+
+.formBox {
+  text-align: left !important;
+}
+
+.gender-label {
+  flex-direction: row!important;
+  align-items: center;
+  width: 70%;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 480px) {
@@ -113,5 +122,11 @@ body {
   .left-div {
     padding-right: 0px;
     width: 55%;
+  }
+
+  .gender-label {
+    align-items: start;
+    flex-direction: column!important;
+    width: 100%;
   }
 }
